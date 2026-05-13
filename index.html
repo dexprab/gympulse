@@ -26,20 +26,20 @@
 
     .container{
       width:92%;
-      max-width:1100px;
+      max-width:1000px;
       margin:auto;
     }
 
     section{
-      padding:70px 0;
+      padding:65px 0;
     }
 
     /* HERO */
 
     .hero{
       text-align:center;
-      padding-top:60px;
-      padding-bottom:50px;
+      padding-top:45px;
+      padding-bottom:35px;
 
       background:
       radial-gradient(circle at top right,#15472d 0%,transparent 30%),
@@ -59,8 +59,8 @@
     }
 
     h1{
-      font-size:58px;
-      line-height:1.05;
+      font-size:54px;
+      line-height:1.08;
       font-weight:800;
       margin-bottom:20px;
       letter-spacing:-2px;
@@ -71,67 +71,114 @@
     }
 
     .hero p{
-      font-size:22px;
+      font-size:21px;
       color:#c0c0c0;
-      line-height:1.6;
-      max-width:700px;
+      line-height:1.7;
+      max-width:760px;
       margin:auto;
-      margin-bottom:35px;
+      margin-bottom:30px;
     }
 
-    .buttons{
+    .hero-points{
       display:flex;
       justify-content:center;
       gap:14px;
       flex-wrap:wrap;
-      margin-bottom:45px;
+
+      margin-bottom:35px;
+    }
+
+    .hero-point{
+      background:#161616;
+      border:1px solid #262626;
+      border-radius:14px;
+      padding:12px 16px;
+      color:#d5d5d5;
+      font-size:15px;
     }
 
     .btn{
-      padding:16px 28px;
-      border-radius:14px;
-      text-decoration:none;
-      font-weight:700;
-      font-size:16px;
-      transition:0.3s;
-    }
+      display:inline-block;
 
-    .btn-primary{
       background:linear-gradient(135deg,#00ff88,#00d26a);
-      color:black;
-    }
 
-    .btn-secondary{
-      background:#181818;
-      border:1px solid #2e2e2e;
-      color:white;
+      color:black;
+
+      text-decoration:none;
+
+      padding:18px 34px;
+
+      border-radius:16px;
+
+      font-size:18px;
+
+      font-weight:700;
+
+      transition:0.3s;
     }
 
     .btn:hover{
       transform:translateY(-2px);
     }
 
-    /* HERO IMAGE */
+    /* SIMPLE VISUAL */
 
-    .hero-image-wrap{
-      margin-top:20px;
-    }
+    .example-box{
+      max-width:620px;
 
-    .hero-image{
-      width:100%;
-      max-width:1100px;
+      margin:45px auto 0 auto;
+
+      background:#141414;
+
+      border:1px solid #262626;
 
       border-radius:28px;
-      border:1px solid #272727;
 
-      box-shadow:
-      0 0 60px rgba(0,255,136,0.15);
+      padding:30px;
 
-      display:block;
-      margin:auto;
+      text-align:left;
     }
 
-    /* PROBLEMS */
+    .example-title{
+      font-size:24px;
+      margin-bottom:24px;
+      color:#00ff88;
+      font-weight:700;
+    }
+
+    .example-item{
+      background:#1d1d1d;
+
+      border-radius:18px;
+
+      padding:18px;
+
+      margin-bottom:16px;
+
+      font-size:17px;
+
+      color:#d4d4d4;
+    }
+
+    .example-btn{
+      display:inline-block;
+
+      margin-top:10px;
+
+      background:#00ff88;
+
+      color:black;
+
+      padding:14px 22px;
+
+      border-radius:14px;
+
+      font-weight:700;
+
+      font-size:15px;
+    }
+
+    /* PAIN SECTION */
 
     .section-title{
       text-align:center;
@@ -143,83 +190,89 @@
     .section-subtitle{
       text-align:center;
       color:#aaaaaa;
-      max-width:700px;
+      max-width:720px;
       margin:auto;
       line-height:1.7;
       font-size:19px;
       margin-bottom:50px;
     }
 
-    .grid{
+    .pain-grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
       gap:22px;
     }
 
-    .card{
+    .pain-card{
       background:#131313;
+
       border:1px solid #242424;
+
       border-radius:24px;
-      padding:28px;
+
+      padding:30px;
     }
 
-    .card h3{
-      font-size:22px;
-      margin-bottom:14px;
+    .pain-card h3{
+      font-size:24px;
+      margin-bottom:16px;
+      line-height:1.4;
     }
 
-    .card p{
+    .pain-card p{
       color:#bbbbbb;
       line-height:1.7;
+      font-size:16px;
+    }
+
+    /* VALUE SECTION */
+
+    .value-section{
+      background:#101010;
+      border-top:1px solid #1c1c1c;
+      border-bottom:1px solid #1c1c1c;
+    }
+
+    .value-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:22px;
+      margin-top:50px;
+    }
+
+    .value-card{
+      background:#161616;
+      border:1px solid #262626;
+      border-radius:24px;
+      padding:28px;
+      text-align:center;
+    }
+
+    .value-card h3{
+      font-size:22px;
+      margin-top:16px;
+      margin-bottom:12px;
+    }
+
+    .value-card p{
+      color:#bdbdbd;
+      line-height:1.7;
+    }
+
+    .emoji{
+      font-size:42px;
     }
 
     /* SIGNUP */
 
     .signup{
-      background:#101010;
-      border-top:1px solid #1d1d1d;
+      text-align:center;
     }
 
-    form{
-      max-width:650px;
-      margin:auto;
-
-      display:flex;
-      flex-direction:column;
-      gap:18px;
-    }
-
-    input,
-    textarea{
-      background:#171717;
-      border:1px solid #2b2b2b;
-      border-radius:16px;
-
-      padding:18px;
-
-      color:white;
-      font-size:16px;
-      font-family:'Inter',sans-serif;
-    }
-
-    textarea{
-      min-height:120px;
-      resize:vertical;
-    }
-
-    button{
-      background:linear-gradient(135deg,#00ff88,#00d26a);
-      color:black;
-
-      border:none;
-      border-radius:16px;
-
-      padding:18px;
-
-      font-size:18px;
-      font-weight:700;
-
-      cursor:pointer;
+    .tally-wrap{
+      width:100%;
+      max-width:700px;
+      margin:40px auto 0 auto;
     }
 
     footer{
@@ -254,18 +307,23 @@
         font-size:17px;
       }
 
-      .hero-image{
-        border-radius:20px;
-      }
-
       .btn{
         width:100%;
-        text-align:center;
+        max-width:320px;
+      }
+
+      .example-box{
+        padding:24px;
+      }
+
+      .example-item{
+        font-size:16px;
       }
 
     }
 
   </style>
+
 </head>
 
 <body>
@@ -281,37 +339,62 @@
       </div>
 
       <h1>
-        Members Ko <span class="green">Consistent</span><br>
-        Rakhna Ab Easy 💪
+        Roz Follow-Up Kar Kar Ke<br>
+        <span class="green">Thak Gaye?</span> 😓
       </h1>
 
       <p>
-        Track attendance, follow-up absent members,
-        run fitness challenges and keep your clients active —
-        all in one simple app.
+        GymPulse helps trainers track attendance,
+        identify inactive members,
+        and keep gym batches active —
+        without daily chasing on WhatsApp.
       </p>
 
-      <div class="buttons">
+      <!-- VALUE POINTS -->
 
-        <a href="#signup" class="btn btn-primary">
-          Join Early Access
-        </a>
+      <div class="hero-points">
 
-        <a href="#signup" class="btn btn-secondary">
-          Get Demo
-        </a>
+        <div class="hero-point">
+          💪 More Consistent Members
+        </div>
+
+        <div class="hero-point">
+          ⏰ Save Follow-Up Time
+        </div>
+
+        <div class="hero-point">
+          📈 Better Client Retention
+        </div>
 
       </div>
 
-      <!-- MAIN IMAGE -->
+      <a href="#signup" class="btn">
+        🚀 Try GymPulse Early
+      </a>
 
-      <div class="hero-image-wrap">
+      <!-- SIMPLE VISUAL -->
 
-        <img
-          src="GT1.png"
-          alt="GymPulse App"
-          class="hero-image"
-        >
+      <div class="example-box">
+
+        <div class="example-title">
+          📅 Morning Batch
+        </div>
+
+        <div class="example-item">
+          ✔ 22 Members Present Today
+        </div>
+
+        <div class="example-item">
+          ❌ 4 Members Missed Workout
+        </div>
+
+        <div class="example-item">
+          ⚠ Rahul Hasn't Come For 5 Days
+        </div>
+
+        <div class="example-btn">
+          📲 Send Reminder
+        </div>
 
       </div>
 
@@ -319,7 +402,7 @@
 
   </section>
 
-  <!-- PROBLEMS -->
+  <!-- PAIN SECTION -->
 
   <section>
 
@@ -330,43 +413,115 @@
       </h2>
 
       <p class="section-subtitle">
-        Most trainers lose clients because motivation and follow-up become difficult after a few weeks.
+        Most trainers lose clients because daily tracking and follow-up becomes difficult after a few weeks.
       </p>
 
-      <div class="grid">
+      <div class="pain-grid">
 
-        <div class="card">
+        <div class="pain-card">
 
           <h3>
-            ❌ Members Stop Coming
+            ❌ Clients 1 Month Baad Aana Band Kar Dete Hain
           </h3>
 
           <p>
-            Some clients suddenly disappear after 1 month and trainers realize too late.
+            Trainers often realize too late that members have completely stopped coming.
           </p>
 
         </div>
 
-        <div class="card">
+        <div class="pain-card">
 
           <h3>
-            ❌ WhatsApp Gets Messy
+            ❌ Roz Absent Members Ko Message Karna Padta Hai
           </h3>
 
           <p>
-            Attendance and reminders get lost between hundreds of messages.
+            Manual follow-up takes too much time every single day.
           </p>
 
         </div>
 
-        <div class="card">
+        <div class="pain-card">
 
           <h3>
-            ❌ Hard To Follow-Up
+            ❌ WhatsApp Groups Mein Kuch Track Nahi Hota
           </h3>
 
           <p>
-            Messaging absent members every day takes too much time.
+            Attendance, reminders and updates get lost between hundreds of messages.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- VALUE SECTION -->
+
+  <section class="value-section">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        GymPulse Trainers Ko Kaise Help Karega 🚀
+      </h2>
+
+      <p class="section-subtitle">
+        A simple tool to help trainers save time,
+        improve follow-ups,
+        and keep members more consistent.
+      </p>
+
+      <div class="value-grid">
+
+        <div class="value-card">
+
+          <div class="emoji">
+            📲
+          </div>
+
+          <h3>
+            Quick Follow-Up
+          </h3>
+
+          <p>
+            Know instantly which members missed gym and send reminders faster.
+          </p>
+
+        </div>
+
+        <div class="value-card">
+
+          <div class="emoji">
+            💪
+          </div>
+
+          <h3>
+            Better Consistency
+          </h3>
+
+          <p>
+            Keep members active with tracking, reminders and motivation.
+          </p>
+
+        </div>
+
+        <div class="value-card">
+
+          <div class="emoji">
+            ⏰
+          </div>
+
+          <h3>
+            Save Daily Time
+          </h3>
+
+          <p>
+            Reduce manual tracking and daily WhatsApp follow-up effort.
           </p>
 
         </div>
@@ -384,15 +539,31 @@
     <div class="container">
 
       <h2 class="section-title">
-        Become An Early Trainer 🚀
+        Want To Test GymPulse Before Launch? 🚀
       </h2>
 
       <p class="section-subtitle">
-        We are onboarding a few trainers before launch.
+        We’re onboarding a few trainers to help us build a simple tool for better member tracking and follow-up.
       </p>
 
-     <iframe data-tally-src="https://tally.so/embed/Pdveb1?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1714" frameborder="0" marginheight="0" marginwidth="0" title="🔥 GymPulse Early Access"></iframe>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+      <!-- TALLY EMBED -->
+
+      <div class="tally-wrap">
+
+        <!-- REPLACE WITH YOUR TALLY EMBED -->
+
+        <iframe
+          data-tally-src="YOUR-TALLY-LINK"
+          loading="lazy"
+          width="100%"
+          height="520"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="GymPulse Form">
+        </iframe>
+
+      </div>
 
     </div>
 
